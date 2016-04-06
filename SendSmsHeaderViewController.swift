@@ -9,8 +9,6 @@ import UIKit
 
 class SendSmsHeaderViewController: UITableViewController {
     
-    @IBOutlet weak var mySearchBar: UISearchBar!
-    
     var detailViewController: SendSmsDetailViewController? = nil
     
     var smsCollection = [Sms]()
@@ -22,9 +20,11 @@ class SendSmsHeaderViewController: UITableViewController {
     var filteredNames = [Sms]()
     
     
-//    func filterContentForSearchText(searchText: String, scope: String = "ALL") {
-//        filteredNames = smsCollection.filter (sms)
-//    }
+    func filterContentForSearchText(searchText: String, scope: String = "ALL") {
+        filteredNames = smsCollection.filter { sms in
+            return sms.name.lowercaseString.containsString(searchText.lowercaseString) }
+        tableView.reloadData()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,10 +39,10 @@ class SendSmsHeaderViewController: UITableViewController {
         
             //self.detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? SendSmsDetailViewController
         
-//        searchController.searchResultsUpdater = self
-//        searchController.dimsBackgroundDuringPresentation = false
-//        definesPresentationContext = true
-//        tableView.tableHeaderView = searchController.searchBar
+        searchController.searchResultsUpdater = self
+        searchController.dimsBackgroundDuringPresentation = false
+        definesPresentationContext = true
+        tableView.tableHeaderView = searchController.searchBar
         
         service = SmsService()
         service.getSms {
@@ -92,7 +92,14 @@ class SendSmsHeaderViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "Show Message" {
             if let indexPath = self.tableView.indexPathForSelectedRow {
-                let sms = smsCollection[indexPath.row]
+                let sms : Sms
+                //let sms = smsCollection[indexPath.row]
+                if searchController.active && searchController.searchBar.text != "" {
+                    sms = filteredNames[indexPath.row]
+                }else{
+                    sms = smsCollection[indexPath.row]
+                }
+                
                 let controller = segue.destinationViewController as! SendSmsDetailViewController
                 controller.messageDetail = ["msg": sms.msg, "name": sms.name, "mobile": sms.mobile, "id": String(sms.id), "senttime": sms.senttime]
             }
@@ -120,14 +127,23 @@ class SendSmsHeaderViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if searchController.active && searchController.searchBar.text != "" {
+           return filteredNames.count
+        }
         return smsCollection.count
+        
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) 
+        let sms : Sms
         
-        let sms = smsCollection[indexPath.row]
+        if searchController.active && searchController.searchBar.text != "" {
+            sms = filteredNames[indexPath.row]
+        }else{
+            sms = smsCollection[indexPath.row]
+        }
         
         cell.textLabel!.text = sms.name
         cell.detailTextLabel!.text = "sent date: " + sms.senttime
@@ -148,15 +164,11 @@ class SendSmsHeaderViewController: UITableViewController {
         }
     }
     
-    func searchBarCancelButtonClicked(mySearchBar: UISearchBar) {
-        mySearchBar.resignFirstResponder()
+    
+}
+
+extension SendSmsHeaderViewController : UISearchResultsUpdating {
+    func updateSearchResultsForSearchController(searchController: UISearchController) {
+        filterContentForSearchText(searchController.searchBar.text!)
     }
-    
-    
-    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
-        mySearchBar.resignFirstResponder()
-    }
-    
-    
-    
 }
