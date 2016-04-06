@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SendSmsHeaderView.swift"
+            timestampString = "481005030.746757"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "SendSmsHeaderView"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SendSmsHeaderViewController.swift"
+            timestampString = "481549397.817683"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "SendSmsHeaderViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "messageCenter/SendSmsDetailViewController.swift"
+            timestampString = "481431686.5406"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "SendSmsDetailViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "messageCenter.SendSmsDetailViewController.messageDetail.getter : Swift.Dictionary&lt;Swift.String, Swift.String&gt;"
+                  moduleName = "messageCenter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Eman/Desktop/xcode%20Project/MessageCenter/messageCenter/messageCenter/SendSmsDetailViewController.swift"
+                  timestampString = "481548033.517405"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "97">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "messageCenter.SendSmsDetailViewController.messageDetail.setter : Swift.Dictionary&lt;Swift.String, Swift.String&gt;"
+                  moduleName = "messageCenter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Eman/Desktop/xcode%20Project/MessageCenter/messageCenter/messageCenter/SendSmsDetailViewController.swift"
+                  timestampString = "481548033.517496"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "188">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "messageCenter.SendSmsDetailViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; messageCenter.SendSmsDetailViewController"
+                  moduleName = "messageCenter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Eman/Desktop/xcode%20Project/MessageCenter/messageCenter/messageCenter/SendSmsDetailViewController.swift"
+                  timestampString = "481548033.517576"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "338">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "messageCenter.SendSmsDetailViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;messageCenter.SendSmsDetailViewController&gt;"
+                  moduleName = "messageCenter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Eman/Desktop/xcode%20Project/MessageCenter/messageCenter/messageCenter/SendSmsDetailViewController.swift"
+                  timestampString = "481548033.517654"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "240">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "messageCenter/SendSmsDetailViewController.swift"
+            timestampString = "481431686.5406"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "SendSmsDetailViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "messageCenter.SendSmsDetailViewController.id_text.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  moduleName = "messageCenter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Eman/Desktop/xcode%20Project/MessageCenter/messageCenter/messageCenter/SendSmsDetailViewController.swift"
+                  timestampString = "481548033.518636"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "messageCenter.SendSmsDetailViewController.id_text.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  moduleName = "messageCenter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Eman/Desktop/xcode%20Project/MessageCenter/messageCenter/messageCenter/SendSmsDetailViewController.swift"
+                  timestampString = "481548033.518729"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "42">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "messageCenter.SendSmsDetailViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; messageCenter.SendSmsDetailViewController"
+                  moduleName = "messageCenter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Eman/Desktop/xcode%20Project/MessageCenter/messageCenter/messageCenter/SendSmsDetailViewController.swift"
+                  timestampString = "481548033.518804"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "70">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "messageCenter.SendSmsDetailViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;messageCenter.SendSmsDetailViewController&gt;"
+                  moduleName = "messageCenter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Eman/Desktop/xcode%20Project/MessageCenter/messageCenter/messageCenter/SendSmsDetailViewController.swift"
+                  timestampString = "481548033.51888"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "31">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SendSmsHeaderViewController.swift"
+            timestampString = "481549397.817683"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
